@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TheBox</title>
   <link rel="stylesheet" href="styles.css" />
@@ -359,5 +359,66 @@ a {
   }
   .contact-form textarea {
     grid-column: span 2;
+  }
+}
+
+
+
+<footer class="footer-section py-5 bg-light">
+  <div class="container">
+    <!-- Logo -->
+    <div class="text-center mb-4">
+      <h4 class="fw-semibold mb-0 text-black">
+        nuvosa<span class="text-danger">•</span>
+      </h4>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav justify-content-center mb-4 flex-wrap">
+      <li class="nav-item"><a class="nav-link text-muted px-3" href="#">Overview</a></li>
+      <li class="nav-item"><a class="nav-link text-muted px-3" href="#">Pricing</a></li>
+      <li class="nav-item"><a class="nav-link text-muted px-3" href="#">Careers</a></li>
+      <li class="nav-item"><a class="nav-link text-muted px-3" href="#">Help</a></li>
+      <li class="nav-item"><a class="nav-link text-muted px-3" href="#">Privacy</a></li>
+    </ul>
+
+    <!-- Divider -->
+    <hr class="border-secondary mb-4" />
+
+    <!-- Bottom row -->
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 small text-muted text-center text-md-start"
+    >
+      <div>Copyright © 2023 Nuvosa, All Rights Reserved.</div>
+      <div class="d-flex flex-column flex-sm-row gap-2 gap-sm-3">
+        <a href="#" class="text-muted text-decoration-none">Terms Of Use</a>
+        <a href="#" class="text-muted text-decoration-none">Copyright & Trademark</a>
+        <a href="#" class="text-muted text-decoration-none">Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+// Extra-small devices (max-width: 320px)
+@media (max-width: 320px) {
+  .footer-section {
+    .nav-link {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 0.85rem; // slightly smaller links
+    }
+
+    h4 {
+      font-size: 1.1rem; // scale down logo text
+    }
+
+    .small {
+      font-size: 0.75rem; // adjust copyright & links
+    }
+
+    .d-flex.gap-2,
+    .d-flex.gap-3 {
+      gap: 0.5rem !important; // tighter gaps
+    }
   }
 }
